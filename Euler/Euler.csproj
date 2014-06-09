@@ -42,9 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Problem 3\LargestPrimeFactorTests.cs" />
     <Compile Include="Problem1\MultiplesOfThreeAndFive.cs" />
     <Compile Include="Problem1\MultiplesOfThreeAndFiveTests.cs" />
-    <Compile Include="Problem2\EvenFibonacciNumbersTests.cs" />
+    <Compile Include="Problem2\FibonacciTests.cs" />
     <Compile Include="Problem2\Fibonacci.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
