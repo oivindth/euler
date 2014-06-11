@@ -17,7 +17,9 @@ namespace Euler.Problem_3
         [TestCase(1, new int []{})]
         [TestCase(2, new int[] {2 })]
         [TestCase(3, new int[] {3 })]
-        //[TestCase(4, new int[] { 2,2 })]
+        [TestCase(4, new int[] { 2,2 })]
+        //[TestCase(5, new int[] {  5 })]
+        //[TestCase(6, new int[] { 2,3 })]
         public void Test_PrimeFactorsOf(int n, int[] expected)
         {
             var factors = new PrimeFactors();
@@ -31,9 +33,14 @@ namespace Euler.Problem_3
         public int [] FactorsOf(int n)
         {
             var factors = new List<int>();
-            if (n%2 == 0 ) factors.Add(n);
-            if (n%3 == 0) factors.Add(n);
-            
+            if (n > 1)
+            {
+                if (n%2 == 0)
+                {
+                    if (n/2 == 2) factors.Add(n);
+                }
+                factors.Add(n);
+            }
             return factors.ToArray();
         }
     }
