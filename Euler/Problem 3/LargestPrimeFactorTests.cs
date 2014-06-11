@@ -35,10 +35,6 @@ namespace Euler.Problem_3
             var factors = new List<int>();
             if (n > 1)
             {
-                if (n%2 == 0)
-                {
-                    if (n/2 == 2) factors.Add(n);
-                }
                 factors.Add(n);
             }
             return factors.ToArray();
